@@ -137,7 +137,7 @@ async function removeCartItem(cartId) {
 async function clearCart() {
 	// 請實作此函式
 	// 提示：發送 DELETE 請求到 /carts
-	const response = await fetch (`${BASE_URL}/api/livejs/v1/customer/${API_PATH}/carts/`,{
+	const response = await fetch (`${BASE_URL}/api/livejs/v1/customer/${API_PATH}/carts`,{
 	method:'DELETE'
 	}
 	)
@@ -155,7 +155,7 @@ async function clearCart() {
    答：
    1xx→資訊性回應
    2xx→成功
-   3xx→成功導向
+   3xx→重新導向
    4xx→前端錯誤
    5xx→後端錯誤
 
